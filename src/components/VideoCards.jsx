@@ -8,7 +8,7 @@ const VideoCards = () => {
       <div className="flex flex-col md:flex-row bg-gray-100 rounded-xl shadow-md overflow-hidden">
         <video
           className="w-full md:w-1/2 h-auto object-cover"
-          src="./assets/IMG_6012.MOV"
+          src="/IMG_6012.MOV"
           controls
         />
         <div className="p-6 flex items-center justify-center md:w-1/2">
@@ -22,7 +22,7 @@ const VideoCards = () => {
       <div className="flex flex-col md:flex-row-reverse bg-gray-100 rounded-xl shadow-md overflow-hidden">
         <video
           className="w-full md:w-1/2 h-auto object-cover"
-          src="./assets/IMG_6047.MOV"
+          src="/IMG_6047.MOV"
           controls
         />
         <div className="p-6 flex items-center justify-center md:w-1/2">

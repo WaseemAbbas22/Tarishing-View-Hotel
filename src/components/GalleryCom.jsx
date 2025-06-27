@@ -5,49 +5,49 @@ import { useNavigate } from 'react-router-dom';
 const galleryImages = [
   
   {
-    image: './assets/IMG_6277.jpg',
+    image: '/IMG_6277.jpg',
     title: 'Executive Suite',
     price: 'Rs. 12,000 / night',
     capacity: '3 Adults',
   }, 
   {
-    image: './assets/IMG_6291.jpg',
+    image: '/IMG_6291.jpg',
     title: 'Premium Suite',
     price: 'Rs. 15,000 / night',
     capacity: '4 Adults',
   },
   {
-    image: './assets/IMG_6304.jpg',
+    image: '/IMG_6304.jpg',
     title: 'Luxury Suite',
     price: 'Rs. 18,500 / night',
     capacity: '4 Adults + 2 Kids',
   },
   {
-    image: './assets/IMG_6309.jpg',
+    image: '/IMG_6309.jpg',
     title: 'Double Room',
     price: 'Rs. 7,200 / night',
     capacity: '2 Adults',
   },
   {
-    image: './assets/IMG_6292.jpg',
+    image: '/IMG_6292.jpg',
     title: 'Twin Room',
     price: 'Rs. 6,500 / night',
     capacity: '2 Adults',
   },
   {
-    image: './assets/IMG_6277.jpg',
+    image: '/IMG_6277.jpg',
     title: 'Suite with Balcony',
     price: 'Rs. 13,000 / night',
     capacity: '3 Adults + 1 Child',
   },
   {
-    image: './assets/IMG_6302.jpg',
+    image: '/IMG_6302.jpg',
     title: 'Budget Room',
     price: 'Rs. 4,000 / night',
     capacity: '2 Adults',
   },
   {
-    image: './assets/IMG_6304.jpg',
+    image: '/IMG_6304.jpg',
     title: 'Royal Suite',
     price: 'Rs. 22,000 / night',
     capacity: '5 Adults',

@@ -8,7 +8,7 @@ const Dining = () => {
   return (
     <div>
       <HeroSection
-      image="./assets/IMG_6288.jpg"
+      image="/IMG_6288.jpg"
       title="Discover Our Story"
       subtitle="From humble beginnings to a mountain paradise"
     />

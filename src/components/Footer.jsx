@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Logo Column */}
         <div className="flex-shrink-0">
           <img
-            src="/assets/LogoTarishing.png"
+            src="/LogoTarishing.png"
             alt="Hotel Logo"
             className="h-40 w-auto object-contain mr-10"
           />
@@ -40,7 +40,7 @@ const Footer = () => {
         {/* Image */}
         <div className="flex-shrink-0">
           <img
-            src="/assets/IMG_6072.jpg"
+            src="/IMG_6072.jpg"
             alt="Hotel Sign Board"
             className="h-60 w-auto object-cover rounded-md"
           />

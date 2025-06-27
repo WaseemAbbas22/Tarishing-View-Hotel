@@ -10,35 +10,35 @@ const Rooms = () => {
   const [stopScroll, setStopScroll] = useState(false);
 
   const thumbnails = [
-    '/assets/IMG_6309.jpg',
-    '/assets/IMG_6277.jpg',
-    '/assets/IMG_6291.jpg',
-    '/assets/IMG_6304.jpg',
+    '/IMG_6309.jpg',
+    '/IMG_6277.jpg',
+    '/IMG_6291.jpg',
+    '/IMG_6304.jpg',
   ];
 
   const cardData = [
     {
       title: " Deluxe Room (2-4 Persons)",
-      image: "./assets/IMG_6302.jpg",
+      image: "/IMG_6302.jpg",
     },
     {
       title: "Deluxe Room (2-4 Persons)",
-      image: "./assets/IMG_6277.jpg",
+      image: "/IMG_6277.jpg",
     },
     {
       title: "Deluxe Room (2-4 Persons)",
-      image: "./assets/IMG_6291.jpg",
+      image: "/IMG_6291.jpg",
     },
     {
       title: "Deluxe Room (2-4 Persons)",
-      image: "./assets/IMG_6304.jpg",
+      image: "/IMG_6304.jpg",
     },
   ];
 
   return (
     <>
     
-    <HeroSection image="./assets/IMG_E6024.jpg" title="Explore Our Rooms" />
+    <HeroSection image="/IMG_E6024.jpg" title="Explore Our Rooms" />
 
     {/*  Marquee Styles */} 
     <RoomGallery />

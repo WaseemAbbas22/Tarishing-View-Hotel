@@ -6,21 +6,21 @@ const VG = () => {
 
   const sections = [
     {
-      image: './assets/IMG_6011.jpg',
+      image: '/IMG_6011.jpg',
       title: 'Experience Fine Dining',
       button: 'Visit Us',
       link: '/dining',
       textPosition: 'top-left',
     },
     {
-      image: './assets/IMG_6314.jpg',
+      image: '/IMG_6314.jpg',
       title: 'Explore Our Hotel Tour',
       button: 'Visit Us',
       link: '/tour',
       textPosition: 'center-right',
     },
     {
-      image: './assets/IMG_E6024.jpg',
+      image: '/IMG_E6024.jpg',
       title: 'View Our Gallery',
       button: 'Visit Us',
       link: '/gallery',

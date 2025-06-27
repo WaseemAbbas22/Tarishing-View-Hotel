@@ -4,37 +4,37 @@ import './RoomGallery.css';
 const rooms = [
   {
     title: 'Deluxe Room ',
-    image: './assets/IMG_6277.jpg',
+    image: '/IMG_6277.jpg',
     adults: 2,
     children: 4,
   },
   {
     title: 'Deluxe Room ',
-    image: './assets/IMG_6292.jpg',
+    image: '/IMG_6292.jpg',
     adults: 2,
     children: 4,
   },
   {
     title: 'Deluxe Room ',
-    image: './assets/IMG_6291.jpg',
+    image: '/IMG_6291.jpg',
     adults: 2,
     children: 4,
   },
   {
     title: 'Deluxe Room ',
-    image: './assets/IMG_6304.jpg',
+    image: '/IMG_6304.jpg',
     adults: 2,
     children: 4,
   },
   {
     title: 'Deluxe Room ',
-    image: './assets/IMG_6309.jpg',
+    image: '/IMG_6309.jpg',
     adults: 2,
     children: 4,
   },
   {
     title: 'Deluxe Room ',
-    image: './assets/IMG_6302.jpg',
+    image: '/IMG_6302.jpg',
     adults: 2,
     children: 4,
   },
