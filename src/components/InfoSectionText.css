@@ -1,0 +1,21 @@
+.info-row {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background: #f9f9f9;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-box {
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  margin: 0.5rem;
+  border-radius: 10px;
+}
