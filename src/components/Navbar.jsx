@@ -43,7 +43,7 @@ const Navbar = () => {
         <Link to="/">
           <img
             className="h-15"
-            src="/LogoTarishing.png"
+            src="./LogoTarishing.png"
             alt="Hotel Logo"
           />
         </Link>
