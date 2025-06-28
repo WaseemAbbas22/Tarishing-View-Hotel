@@ -5,7 +5,7 @@ import HeroSection from '../components/HeroSection';
 
 const Rooms = () => {
   const [mainImage, setMainImage] = useState(
-    '/assets/IMG_6304.jpg'
+    '/IMG_6304.jpg'
   );
   const [stopScroll, setStopScroll] = useState(false);
 
