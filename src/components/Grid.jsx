@@ -9,7 +9,7 @@ const images = [
   '/IMG_6011.jpg',
   '/IMG_6039.jpg',
   '/IMG_6049.jpg',
-  '/IMG_6299.jpg',
+  '/assets/IMG_6299.jpg',
 ];
 
 const Grid = () => {
