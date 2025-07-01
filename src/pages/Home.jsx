@@ -4,7 +4,6 @@ import AboutCom from '../components/AboutCom'
 import GalleryCom from '../components/GalleryCom'
 import VG from '../components/VG' 
 import Services from '../components/Services'
-import Footer from '../components/Footer' 
 
 
 
@@ -17,7 +16,7 @@ const Home = () => {
       <GalleryCom />
       <VG />
       <Services />
-      <Footer />
+      
       {/* Add more components as needed */}
     </div>
   )
