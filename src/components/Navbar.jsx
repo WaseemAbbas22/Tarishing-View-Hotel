@@ -1,37 +1,25 @@
-
 "use client";
 
-import logoTarishing from '/src/assets/LogoTarishing.png';
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import logoTarishing from '/src/assets/LogoTarishing.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Handle scroll background
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    const menuBtn = document.querySelector(".menu-btn");
-    const mobileMenu = document.querySelector(".mobile-menu");
-
-    const handleToggle = () => {
-      mobileMenu.classList.toggle("hidden");
-    };
-
-    menuBtn?.addEventListener("click", handleToggle);
-    return () => {
-      menuBtn?.removeEventListener("click", handleToggle);
-    };
-  }, []);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <div className="text-sm text-white w-full">
@@ -41,7 +29,8 @@ const Navbar = () => {
             ? "bg-white shadow-md text-gray-900"
             : "bg-transparent text-white"
         }`}
-      >        {/* Logo */}
+      >
+        {/* Logo */}
         <Link to="/">
           <img
             className="h-14"
@@ -52,19 +41,24 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center space-x-12 md:pl-28 text-base md:text-lg font-medium">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/Rooms">Rooms</Link></li>
-          <li><Link to="/About">About</Link></li>
-          <li><Link to="/Dining">Dining</Link></li>
-          <li><Link to="/Gallery">Gallery</Link></li>
-          <li><Link to="/Contact">Contact</Link></li>
+          {["Home", "Rooms", "About", "Dining", "Gallery", "Contact"].map((item, idx) => (
+            <li key={idx} className="relative group">
+              <Link
+                to={`/${item === "Home" ? "" : item}`}
+                className="transition duration-300 ease-in-out hover:text-yellow-400"
+              >
+                <span className="tracking-wide">{item}</span>
+                <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-current transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+          ))}
         </ul>
 
-    
         {/* Mobile Menu Button */}
         <button
           aria-label="menu-btn"
           type="button"
+          onClick={toggleMenu}
           className="menu-btn inline-block md:hidden active:scale-90 transition"
         >
           <svg
@@ -76,33 +70,30 @@ const Navbar = () => {
             <path d="M3 7a1 1 0 1 0 0 2h24a1 1 0 1 0 0-2zm0 7a1 1 0 1 0 0 2h24a1 1 0 1 0 0-2zm0 7a1 1 0 1 0 0 2h24a1 1 0 1 0 0-2z" />
           </svg>
         </button>
+      </nav>
 
-        {/* Mobile Menu */}
-        <div className="mobile-menu absolute top-[70px] left-0 w-full bg-white shadow-sm p-6 hidden md:hidden">
-        <ul className="hidden md:flex items-center space-x-12 md:pl-28 text-[17px] font-medium">
-  {["Home", "Rooms", "About", "Dining", "Gallery", "Contact"].map((item, idx) => (
-    <li key={idx} className="relative group">
-      <Link
-        to={`/${item === "Home" ? "" : item}`}
-        className={`transition duration-300 ease-in-out ${
-          scrolled ? "text-gray-800 hover:text-red-600" : "text-white hover:text-yellow-400"
-        }`}
-      >
-        <span className="tracking-wide">{item}</span>
-
-        {/* Animated underline */}
-        <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-current transition-all duration-300 group-hover:w-full"></span>
-      </Link>
-    </li>
-  ))}
-</ul>
-
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden fixed top-[60px] left-0 w-full bg-white shadow-sm p-6 z-40 transition-transform duration-300 ease-in-out">
+          <ul className="flex flex-col space-y-4 text-gray-800 text-lg font-medium">
+            {["Home", "Rooms", "About", "Dining", "Gallery", "Contact"].map((item, idx) => (
+              <li key={idx}>
+                <Link
+                  to={`/${item === "Home" ? "" : item}`}
+                  className="block"
+                  onClick={() => setMenuOpen(false)} // close menu on link click
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
+          </ul>
 
           <button className="bg-gray-100 text-gray-700 mt-6 w-40 h-11 rounded-full border hover:bg-gray-200 transition">
             Book Now
           </button>
         </div>
-      </nav>
+      )}
     </div>
   );
 };

@@ -7,7 +7,7 @@ import img6288 from '/src/assets/IMG_6288.jpg';
 
 const Dining = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <HeroSection
         image={img6288}
         title="Discover Our Story"
