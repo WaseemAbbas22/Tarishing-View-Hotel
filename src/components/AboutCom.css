@@ -1,0 +1,36 @@
+.aboutcom-container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.aboutcom-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #a52a2a;
+}
+
+.aboutcom-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Optional fadeIn keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
