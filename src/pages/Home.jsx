@@ -22,6 +22,7 @@ const Home = () => {
       <VG />
       <Services />
       
+      
       {/* Add more components as needed */}
     </div>
   )
